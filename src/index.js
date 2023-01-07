@@ -60,6 +60,8 @@ document.addEventListener("click", (e) => {
       mode: "cors",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newKeyEvent),
+    }).then((res) => {
+      console.log(res);
     });
     updateKeyMap();
   }
